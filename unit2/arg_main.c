@@ -20,10 +20,10 @@ int main(int argc, char** argv){
 
     strcpy(my_str, argv[1]);
     int num = atoi(argv[1]);
-    printf("num: %i", num)
+
 
     printf("myint: %i , my_float: %f , my_char: %c , my_str: %s , my_ptr_int: %p.\n", my_int, my_float, my_char, my_str, my_prt_int);
-    printf("argc: %i, element 1: %s, elem2: %s char. %c \n", num, argv[2], 'J');
+    printf("argc: %i, element 1: %s, elem2: %s char. %c \n",argc,  num * 2, argv[2], 'J');
 
     return 0;
 }

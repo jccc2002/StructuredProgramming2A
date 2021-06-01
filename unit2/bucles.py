@@ -15,7 +15,7 @@ if __name__ == "__main__":
     print(f' programName: { sys.argv[0]}\n')
     print(lista, len(lista)) #Size of a list
     #Manual
-    # print(lista[0])
+    # print(lista[0])cd 
     # print(lista[1])
     # print(lista[2])
     ##...
