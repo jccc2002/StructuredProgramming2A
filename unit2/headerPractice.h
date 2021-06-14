@@ -1,4 +1,8 @@
 #include <stdio.h>
+#define pi 3.1416
+
+int libInteger = 24;
+
 
 void sayHello(char message[]){
     printf("%s\n", message);

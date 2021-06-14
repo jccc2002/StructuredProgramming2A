@@ -26,7 +26,7 @@ int main( ){
     int myResult = addTwoNumbers(2,5);
     printf("myResult is equal to: %d \n", myResult);
 
-    printf("%d", libInteger);
+    printf("%d \n", libInteger);
     return 0;
 }
 
