@@ -9,5 +9,18 @@ int main(){
     swapF (&num1, &num2);
     printf("num1 = %d and num2 = %d\n", num1, num2);
 
+    
+
+    // int myVar1 = 30;
+    // int myVar2 = 50;
+
+    // swap(&var1, &var2);
+    // SwapGlobal();
+    // printf("myVar1= %d, myVar2= %d\n", myVar1, myVar2);
+
+
     return 0;
 }
+
+
+
