@@ -9,6 +9,10 @@
 
 int myArray[5];
 
+int myInt;
+
+
+
 typedef struct mago{
 
     int vida;
@@ -42,9 +46,9 @@ int main(){
     printf("%d", myArray[4]);
 
     Array* myArray = aFunction();
-    printf("\n%d",myArray->dirArray[0]);
-    printf("\n%d",myArray->dirArray[1]);
-    printf("\n%d",myArray->dirArray[2]);
+    printf("\n%d",myArray->dirArray[0] );
+    printf("\n%d",myArray->dirArray[1] );
+    printf("\n%d",myArray->dirArray[2] );
 
     return 0;
-}
+}   

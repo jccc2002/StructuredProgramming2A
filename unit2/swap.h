@@ -3,7 +3,9 @@
 
 
 typedef struct Array{
-    int dirArray;
+    int dirArray[2];
+    float aFloat;
+    float * aFloatPointer;
 }Array;
 
 // void swapF (int* n1, int*n2){
@@ -37,8 +39,13 @@ void printArray1D(int array[], size_t tam){
     return;
 }
 
-Array* aFunction( ){
+
+
+
+Array* returnArray( ){
     Array* unArrayType = (Array*)malloc(sizeof(Array));
+    printf("address unArrayType: %p, unArrayType = %p\n", &unArrayType, unArrayType);
+
     unArrayType->dirArray[0] = 17;
     unArrayType->dirArray[1] = 15;
     unArrayType->dirArray[2] = 19;
