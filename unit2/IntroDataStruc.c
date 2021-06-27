@@ -9,7 +9,8 @@
 
 int myArray[5];
 
-int myInt;
+int myInt = 3;
+float myFloat = 3.1416;
 
 
 
