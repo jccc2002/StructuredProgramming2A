@@ -20,6 +20,9 @@ typedef struct mago{
     int mana;
     char* nombre;
     //más atributos//
+    //sayHello
+    void (*Saludo) (char message[]);
+    int (*Suma) (int argument1,int argument2);
 
     
 }Mago;
@@ -31,12 +34,14 @@ typedef struct mago{
 
 int main(){
 
-    Mago juan = {100, 250, "Juan"};
+    Mago juan = {100, 250, "Juan", sayHello, addTwoNumbers};
     struct mago miguel = {500, 50, "Miguelito"};
 
 
 
     printf("%s\n",juan.nombre);
+    juan.Saludo("Albion online es un MMORPG no lineal");
+    printf("%d\n", juan.Suma(20,25));
 
     fillArray(myArray, 5);
     printArray1D(myArray, 5);
@@ -46,7 +51,7 @@ int main(){
     printf("%d", myArray[3]);
     printf("%d", myArray[4]);
 
-    Array* myArray = aFunction();
+    Array* myArray = returnArray();
     printf("\n%d",myArray->dirArray[0] );
     printf("\n%d",myArray->dirArray[1] );
     printf("\n%d",myArray->dirArray[2] );

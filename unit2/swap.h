@@ -2,6 +2,12 @@
 #include <stdlib.h>
 
 
+typedef struct utils{
+    int myInt;
+    void (*ShowIntAddress) (int* param);
+ }UTILS;  
+
+
 typedef struct Array{
     int dirArray[2];
     float aFloat;
@@ -21,6 +27,21 @@ typedef struct Array{
 //     myVar1 = myVar2;
 //     myVar2 = temp;
 //     return;
+
+void sayHello(char message[]){
+    printf("%s\n", message);
+
+}
+
+int addTwoNumbers(int argument1,int argument2){
+    int result = argument1 + argument2;
+    return result; 
+}
+
+void ShowIntAddress(int* param){
+    printf("address var1: %p \n", param);
+}
+
 
 void fillArray(int array[], size_t tam){
     for (size_t i = 0; i < tam; i++){
@@ -45,6 +66,8 @@ void printArray1D(int array[], size_t tam){
 Array* returnArray( ){
     Array* unArrayType = (Array*)malloc(sizeof(Array));
     printf("address unArrayType: %p, unArrayType = %p\n", &unArrayType, unArrayType);
+
+    //malloc(), realloc(), calloc(), free()//
 
     unArrayType->dirArray[0] = 17;
     unArrayType->dirArray[1] = 15;
