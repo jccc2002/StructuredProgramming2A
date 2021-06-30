@@ -5,6 +5,8 @@
 typedef struct utils{
     int myInt;
     void (*ShowIntAddress) (int* param);
+    void (*Swap) (int* n1, int*n2);
+
  }UTILS;  
 
 
@@ -40,6 +42,14 @@ int addTwoNumbers(int argument1,int argument2){
 
 void ShowIntAddress(int* param){
     printf("address var1: %p \n", param);
+}
+
+void swapF (int* n1, int*n2){
+    int n3;
+    n3 = *n1;
+    *n1 = *n2;
+    *n2 = n3;
+    return;
 }
 
 
