@@ -12,5 +12,5 @@ typedef struct robot{
 }ROBOT;
 
 void sayHelloToRobot(ROBOT robot){
-    printf("Qué onda %s\n", robot.name);
+    printf("Hello %s\n", robot.name);
 }
