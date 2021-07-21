@@ -2,6 +2,8 @@ from sys import argv   as ag
 
 def palindrome(string):
 
+
+
     validate = "".join(string.lower().split(" "))
     if validate[::-1] == validate:
         return True
